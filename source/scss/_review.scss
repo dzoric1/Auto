@@ -1,0 +1,135 @@
+.review {
+   background-color: #f2f2f2;
+   &__heading {
+      max-width: 900px;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 76px;
+   }
+
+   &__slider-wrapper {
+   }
+
+   &__slider {
+      margin: 0 auto;
+      margin-bottom: 24px;
+   }
+
+   &__slide {
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 72px;
+      margin: 0 15px;
+   }
+
+   &__user {
+      display: flex;
+      margin-bottom: 24px;
+   }
+
+   &__avatar {
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 15px;
+   }
+
+   &__user-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   &__user-name {
+      font-size: 24px;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+   }
+
+   &__user-city {
+      color: #939191;
+   }
+
+   &__quote {
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: -0.03em;
+   }
+
+   &__slider-arrows {
+      display: flex;
+   }
+
+   &__slider-arrow {
+      display: block;
+      width: 48px;
+      height: 48px;
+      background-color: #fff;
+      line-height: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+      path {
+         transition: all 0.3s;
+      }
+      svg {
+         transition: all 0.3s;
+      }
+      &:hover {
+         background-color: black;
+         box-shadow: 0 0 0 10px black;
+         path {
+            fill: #fff;
+         }
+         svg {
+            transform: scale(1.25);
+         }
+      }
+   }
+
+   &__slider-prev {
+      margin-right: 24px;
+   }
+
+   &__slider-next {
+   }
+   &__slider-control {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+   }
+   &__dots {
+      position: absolute;
+      right: 46%;
+      display: flex;
+      .slick-dots {
+         display: flex;
+      }
+      button {
+         font-size: 0;
+         background-color: transparent;
+         width: 30px;
+         height: 30px;
+         display: flex;
+         align-items: center;
+         &::before {
+            content: "";
+            height: 3px;
+            width: 100%;
+            background-color: #b3b7bc;
+            border-radius: 3px;
+         }
+      }
+      li {
+         margin-right: 12px;
+         &:last-child {
+            margin-right: 0;
+         }
+      }
+      .slick-active button::before {
+         background-color: #ff6433;
+         transition: all 0.3s;
+      }
+   }
+}

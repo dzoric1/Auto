@@ -1,0 +1,117 @@
+@import "_nullstyle";
+@import "_fonts";
+
+html,
+body {
+   font-family: "Manrope", sans-serif;
+   color: #1e1b1b;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.wrapper {
+   min-height: 100%;
+   width: 100%;
+   overflow: hidden;
+}
+
+.container {
+   max-width: 1310px;
+   padding: 0 15px;
+   margin: 0 auto;
+   height: 100%;
+}
+
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 50;
+   background-color: rgba(30, 27, 27, 0.5);
+   visibility: hidden;
+   opacity: 0;
+   transition: all 0.3s;
+   &--show {
+      visibility: visible;
+      opacity: 1;
+   }
+}
+
+.burger {
+   display: none;
+}
+
+a {
+   color: inherit;
+}
+.header {
+   padding-bottom: 180px;
+}
+.main {
+   &__service {
+   }
+   &__process {
+      padding: 134px 0;
+   }
+   &__exp {
+      padding-bottom: 48px;
+   }
+   &__brands {
+      padding: 128px 0 80px 0;
+   }
+   &__blog {
+      padding: 130px 0;
+   }
+   &__review {
+      padding: 130px 0;
+   }
+   &__acc {
+      padding: 130px 0;
+   }
+   &__contacts {
+      padding: 120px 0 120px 0;
+   }
+}
+
+.heading {
+   letter-spacing: -0.03em;
+   &__subtitle {
+      font-size: 24px;
+      margin-bottom: 35px;
+   }
+   &__title {
+      font-weight: 800;
+      font-size: 58px;
+      line-height: 76px;
+   }
+}
+.button {
+   display: inline-block;
+   font-size: 18px;
+   line-height: 175%;
+   padding: 16px 40px;
+   color: #fff;
+   border-radius: 12px;
+   background: #ff6433;
+   white-space: nowrap;
+   transition: all 0.3s ease;
+}
+
+.button:hover {
+   box-shadow: 0px 10px 10px rgba(15, 165, 60, 0.2);
+   transform: scale(1.05);
+}
+
+@import "_header";
+@import "_service";
+@import "_process";
+@import "_experience";
+@import "_brands";
+@import "_blog";
+@import "_review";
+@import "_accordeon";
+@import "_contacts";
+@import "_footer";
+@import "_media";

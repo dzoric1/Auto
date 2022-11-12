@@ -1,0 +1,100 @@
+.process {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__content {
+      max-width: 550px;
+   }
+
+   &__heading {
+      margin-bottom: 16px;
+   }
+
+   &__text {
+      line-height: 28px;
+      opacity: 0.6;
+      margin-bottom: 32px;
+      max-width: 450px;
+   }
+
+   &__btn {
+   }
+
+   &__steps {
+      max-width: 340px;
+   }
+
+   &__steps-item {
+      margin-bottom: 16px;
+      :last-child {
+         margin: 0;
+      }
+   }
+
+   &__steps-title {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 48px;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+      position: relative;
+      &--1 {
+         &::before {
+            content: "";
+            background: url("../img/steps/1.svg") 50% 50% no-repeat;
+            position: absolute;
+            top: -15px;
+            left: -100px;
+            width: 80px;
+            height: 80px;
+         }
+      }
+      &--2 {
+         &::before {
+            content: "";
+            background: url("../img/steps/2.svg") 50% 50% no-repeat;
+            position: absolute;
+            top: -15px;
+            left: -100px;
+            width: 80px;
+            height: 80px;
+         }
+      }
+      &--3 {
+         &::before {
+            content: "";
+            background: url("../img/steps/3.svg") 50% 50% no-repeat;
+            position: absolute;
+            top: -15px;
+            left: -100px;
+            width: 80px;
+            height: 80px;
+         }
+      }
+   }
+
+   &__steps-text {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 175%;
+      opacity: 0.6;
+      position: relative;
+      display: flex;
+      align-items: center;
+      &--1,
+      &--2 {
+         &::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: -65px;
+            display: block;
+            height: 75%;
+            border: 2px dashed #ff6433;
+            margin-right: 42px;
+         }
+      }
+   }
+}
